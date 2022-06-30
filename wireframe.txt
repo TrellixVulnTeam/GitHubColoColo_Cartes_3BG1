@@ -1,0 +1,17 @@
+wireframe
+
+Web:
+	-   index: https://wireframe.cc/G6ohda
+	-   login: https://wireframe.cc/env7m4
+	-historia: https://wireframe.cc/6LwpPo
+	- estadio: https://wireframe.cc/t8l2gt
+	-   himno: https://wireframe.cc/2S8AhH
+	-  signup: https://wireframe.cc/TF5j7e
+
+Mobile:
+	-   index: https://wireframe.cc/1ivntK
+	-   login: https://wireframe.cc/lsUNCW
+	-historia: https://wireframe.cc/dw3Rw3
+	- estadio: https://wireframe.cc/4arBjg
+	-   himno: https://wireframe.cc/RLfoqF
+	-  signup: https://wireframe.cc/1zjiwj

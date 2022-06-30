@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ingresar</title>
+        <link rel="icon" href="../image/favicon.png">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <nav>
+            <legend>Menú</legend>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="estadio.html">¿Como llegar?</a></li>
+                <li><a href="himno.html">Himno</a></li>
+                <li><img id="LogoMenu" src="../image/colocolo.png"></li>
+            </ul>
+        </nav>
+        <!-- ends nav -->
+        <section class="Formulario">
+            <legend>Información Básica</legend>
+            <h2>Ingrese los datos requeridos para crear su cuenta.</h2>
+            <form action="">
+                <lu>
+                    <li>Ingrese su Correo: <input class="campo_singup" type="email" name="correo" value="" placeholder="Mail@dominio.cl" required></li>
+                    <li>Ingrese Usuario: <input class="campo_singup" type="text" name="usuario" value="" placeholder="Usuario" required></li>
+                    <li>Ingrese Contraseña: <input class="campo_singup" type="password" name="Contraseña" value="" placeholder="Contraseña" required></li>
+                    <li>Repita la Contraseña: <input class="campo_singup" type="password" name="Contraseña" value="" placeholder="Contraseña" required></li>
+                </lu>
+            </form>
+        </section>
+        <section class="Formulario">
+            <legend>Para recuperar Contraseña</legend>
+            <h2>Ingrese información con la cual recuperara su contraseña a futuro</h2>
+            <form action="">
+            Eliga su pregunta secreta:
+                <ul>
+                    <li><input type="radio" name="PreguntaSecreta" id="PreguntaSecreta" value="jugador" label="¿Jugador Favorito?">¿Jugador Favorito?</li>
+                    <li><input type="radio" name="PreguntaSecreta" id="PreguntaSecreta" value="nacimiento" label="¿Lugar de nacimiento?">Lugar de nacimiento?</li>
+                </ul>
+                <input class="BotonSignup" type="submit" name="" value="Ingresar">
+            </form>
+        </section>
+        <!-- ends form -->
+        <footer>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><img src="../image/facebook.png" alt="logo facebook"></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><img src="../image/twitter.png" alt="logo twitter"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="../image/instagram.png" alt="logo instagram"></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><img src="../image/youtube.png" alt="logo youtube"></a></li>
+            </ul>
+        </footer>
+        <!-- ends footer-->
+        </body>
+    </html>

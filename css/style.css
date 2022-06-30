@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=====================================INDEX=====================================*/
+
+    #GrillaIndex{
+        display: grid;
+        grid-template-areas: 
+        "nav nav"
+        "main aside"
+        "footer footer"
+        ;
+        grid-template-rows: 5% 90% 5%;
+        grid-template-columns: 90% auto;
+    }
+
+@media only screen and (max-width: 929px) {
+    #GrillaIndex{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "aside"
+        "footer"
+        ;
+        grid-template-rows: 5% auto auto 5%;
+        grid-template-columns: 100%;
+    }
+        
+    aside{
+        margin-top: 0%!important;
+    }
+    .tabla{
+        margin-top: 3% !important;
+    }    
+
+}
+
+@media only screen and (max-width: 600px) {  
+    aside{
+        margin-top: 20%!important;
+    }
+    #LogoMenu{
+        display: none;}
+}
+
+@media only screen and (max-width: 450px) {
+    nav ul{
+        font-size: 35%!important;
+
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #LogoMain{
+        display: none;}
+}
+
+
+/*=====================================BODY=====================================*/
+
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 200%;
+    color: whitesmoke;
+    background: linear-gradient(90deg, rgb(150, 150, 150), rgb(66, 66, 66), rgb(33, 33, 33), rgba(8,3,9,255));
+    background-size: 400% 400%;
+	animation: gradient 5s ease;
+    animation-fill-mode: forwards;
+	height: 100%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+    body p{
+        font-family: Assistant;
+        font-size: 50%;
+    }
+/*=====================================NAV=====================================*/
+
+nav{
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+    z-index: 100;
+}
+
+    nav legend{
+        text-align: center;
+    }
+
+    nav ul{
+        list-style: none;
+        font-size: 65%;
+        background: whitesmoke;
+        margin: auto;
+        padding: 1%;
+        border-top: 4px solid black;
+        border-bottom: 4px solid black;
+        box-shadow: 5px 5px 10px black;
+        color:white;
+        height: auto;
+        width: 100%;
+    }
+    
+        nav li{
+            display: inline-block;
+            text-align: center;
+            width: 16%;
+            position: relative;
+        }
+
+            nav li img{
+                margin-left: 100%;
+                position: static;
+                text-align: left;
+                height: 15%;
+                width: 15%;
+            }
+
+/*=====================================MAIN=====================================*/
+
+main{
+    grid-area: main;
+    width: auto;
+    padding: 0.5%;
+    margin: 3% 2% 7% 2%;
+    text-align: justify;
+    text-align: center;
+}
+
+    main img {
+        border: 2px solid #ead36d;
+        padding: 1%;
+        border-radius: 50%;
+        width: 30%;
+        height: 2 vh;
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+    
+    main h1 {
+        border-top: 8px double #ead36d;
+        border-bottom: 8px double #ead36d;
+        text-align: center;
+    }
+
+    main h2{
+        margin-bottom: 3%;
+        padding: 1%;
+        width: auto;
+        text-align: center;
+    }
+        main p{
+            margin: 2%;
+            padding: 1%;
+            width: auto;
+            text-align: justify;
+        }
+/*=====================================ASIDE=====================================*/
+aside {
+    grid-area: aside;
+    width: auto;
+    padding: 0.5%;
+    margin: 100% 2% 7% 2%;
+    text-align: center;
+}
+
+    .marcador{
+        border-top: double 3px white;
+        border-bottom: double 3px white;
+        font-family: Rye;
+    }
+
+        #local{
+            height: 10%;
+            width: 10%;
+        }
+
+        #visita{
+            height: 13%;
+            width: 10%;
+        }
+
+    #TablaPuntaje{
+                border: #febe36 solid 1px;
+                margin-top: 50%;
+                font-size: 65%;
+    }
+/*=====================================FOOTER=====================================*/
+
+footer{
+    grid-area: footer;
+    padding-top: 5px;
+    margin-top: 10px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    background-color: #3a3a3a;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+    footer ul{
+        text-align: center;
+        list-style: none;
+        font-size: 0;
+        box-shadow: 5px 5px 10px black;
+    }        
+
+        footer li{
+            display: inline-block;
+            position: relative;
+            font-size: 10px;
+        }
+
+            footer img{
+                padding: 10%;
+                width: 100%;
+                height: 100%;
+            }
+/*=====================================LOGIN=====================================*/
+
+#GrillaLogIn{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "LogIn"
+    "footer"
+    ;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+@media only screen and (min-height: 1360px) {
+    #GrillaLogIn{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "LogIn"
+        "footer"
+        ;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+
+        .LogIn form{
+            margin-top: 10% !important;
+            height: 110% !important;
+            width: 100% !important;
+        }
+}
+
+
+@media only screen and (max-width: 880px) {
+    #GrillaLogIn{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "LogIn"
+        "footer"
+        ;
+        grid-template-rows: 40% auto 10%;
+        grid-template-columns: auto;
+    }
+
+        .LogIn form{
+            width: 100% !important; 
+            height: 100% !important;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+    #GrillaLogIn{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "LogIn"
+        "footer"
+        ;
+        grid-template-rows: 40% auto 10%;
+        grid-template-columns: auto;
+    }
+
+        #LogoMenu{
+            display: none;}
+}
+
+.LogIn{
+    grid-area: LogIn;
+    margin-top: 2%;
+    text-align: left;
+}
+
+    .LogIn h1{
+        margin-top: 0.5%;
+        padding-top: 1%;
+        border-bottom: #ead36d dashed;
+        margin-bottom: 1%;
+        padding-bottom: 0.5%;
+    }
+
+    .LogIn form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 33%;
+        height: 100%;
+        background: #161122;
+        margin: auto;
+        box-shadow: 7px 13px 37px #000;
+        padding: 5% 10%;
+        border-top: 4px solid #febe36;
+        border-bottom: 4px solid #febe36;
+    }
+
+.campo_login{
+            margin-top: 5%;
+            height: 20%;
+            width: 100%;
+        }
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    padding: 5%;
+    background-color: blueviolet;
+    align-content: center;
+}
+
+    .boton:hover{
+        color: whitesmoke;
+        background-color: #161122;
+        width: 95%;
+        align-content: center;
+        transition-duration: 1s;
+    }
+/*=====================================HISTORIA=====================================*/
+
+.colocolo h1{
+    text-align: left;
+}
+
+.colocolo img{
+    margin-top: 3%;
+    border-radius: 0%;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 2%;
+    text-align: center;
+    opacity: 1;
+}
+/*=====================================ESTADIO=====================================*/
+.Mapa{
+    margin-top: 1%;
+    text-align: left;
+    height: 120vh;
+    margin-bottom: 9%;
+}
+
+    .Mapa iframe{
+        margin-top: 2%;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5%;
+    }
+/*=====================================HIMNO=====================================*/
+
+.Himno{
+    margin-top: 30px;
+    text-align: center;
+    height: 120vh;
+}
+
+    .Himno iframe{
+        width:50%;
+        height:50%;
+}
+
+    .Himno h1{
+        margin-top: 2%;
+        border-top: 4px double #ead36d;
+        margin-bottom: 2%;
+        border-bottom: 4px double #ead36d;
+    }
+
+    .Himno p{
+        margin-top: 2%;
+    }
+
+/*=====================================SIGNUP=====================================*/
+
+.Formulario{
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .Formulario legend{
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .Formulario h2{
+        border-top: #3a3a3a dashed;
+        margin-top:10px;
+        padding-top: 5px;
+        border-bottom: #3a3a3a dashed;
+        margin-bottom:10px;
+        padding-bottom: 5px;
+    }
+
+    .Formulario form{
+        font-size: 15px;
+        width: 33%;
+        height: 100%;
+        background: black;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 4%;
+        box-shadow: 7px 13px 37px #000;
+        padding: 2% 3%;
+        border-top: 4px solid white;
+        border-bottom: 4px solid white;
+        color:whitesmoke;
+    }
+
+        .Formulario form ul{
+            margin-top: 10px;
+        }
+
+            .Formulario form li{
+                margin-top: 5px;
+            }
+
+.campo_singup{
+    height: 100%;
+    width: 100%;
+}
+
+    .BotonSignup{
+        margin-top: 10%;
+        padding: 5%;
+        margin-bottom: 10%;
+        align-content: center;
+        background-color: blueviolet;
+    }
