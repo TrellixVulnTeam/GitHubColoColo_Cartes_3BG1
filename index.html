@@ -6,6 +6,7 @@
     <title>Inicio</title>
     <link rel="icon" href="./image/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
         <!-- ends nav -->
         <main id="main">
             <h1>Colo-Colo C.F.</h1>
-            <img id="LogoMain" src="./image/colocolo.png"
+            <img class="wow fadeIn" id="LogoMain" src="./image/colocolo.png"
                 alt="Escudo del equipo Colo-Colo que representa el busto del cacique mapuche del mismo nombre">
             <h2>Página de Colo-Colo Club de Fútbol de Chile</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -98,6 +99,10 @@
         </footer>
         <!-- ends footer-->
     </div>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
