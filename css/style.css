@@ -180,7 +180,7 @@ main{
         border: 0px solid #ead36d;
         padding: 0%;
         border-radius: 0%;
-        height: 20 vh;
+        height: 30vh;
         margin-top: 0%;
         margin-bottom: 0%;
     }
@@ -188,8 +188,31 @@ main{
     .carousel p{
         font-family: Rye;
         text-align: center;
+        margin-top: 0px;
+        font-size: 100%;
+        color: red;
 
     }
+
+    .carousel-control-prev-icon{
+        background-image: none;
+    }
+    .carousel-control-next-icon{
+        background-image: none;
+    }
+    
+    .carousel-control-next-icon:after{
+        content: '>';
+        font-size: 55px;
+        color: #ead36d;
+    }
+    .carousel-control-prev-icon:after{
+        content: '<';
+        font-size: 55px;
+        color: #ead36d;
+    }
+
+
 /*=====================================ASIDE=====================================*/
 aside {
     grid-area: aside;
@@ -354,20 +377,17 @@ footer{
             width: 100%;
         }
 
-.boton{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 50%;
+
+.btn{
+    width: 100%;
     padding: 5%;
     background-color: blueviolet;
-    align-content: center;
 }
 
-    .boton:hover{
-        color: whitesmoke;
-        background-color: #161122;
-        width: 95%;
+.btn:hover{
+        color: black;
+        background-color: #ead36d;
+        width: 100%;
         align-content: center;
         transition-duration: 1s;
     }
