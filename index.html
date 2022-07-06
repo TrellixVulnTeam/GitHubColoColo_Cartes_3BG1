@@ -5,6 +5,7 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Inicio</title>
     <link rel="icon" href="./image/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
 </head>
@@ -28,42 +29,35 @@
             <img class="wow fadeIn" id="LogoMain" src="./image/colocolo.png"
                 alt="Escudo del equipo Colo-Colo que representa el busto del cacique mapuche del mismo nombre">
             <h2>Página de Colo-Colo Club de Fútbol de Chile</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce suscipit lobortis arcu, sagittis viverra sem faucibus id.
-                    In quis fringilla leo, quis ullamcorper ligula.
-                    Aliquam sed sapien eget leo lacinia rhoncus.
-                    Donec facilisis interdum enim, vehicula blandit libero facilisis in. Nulla ac leo in justo volutpat
-                    pharetra at eget est.
-                    Donec maximus ante vitae nisi pretium, egestas feugiat felis elementum. Vestibulum a felis efficitur,
-                    malesuada nunc sed, tincidunt lacus.
-                    Quisque in dui ut nulla cursus maximus. Suspendisse euismod vestibulum dui, at cursus dui ornare vel.
-                    Sed id tristique mauris. Sed vehicula est id arcu auctor, eu interdum dui molestie. Phasellus et leo
-                    dapibus, venenatis nunc ut, ornare lorem.
-                    Curabitur tempus ac nisi eu euismod.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce suscipit lobortis arcu, sagittis viverra sem faucibus id.
-                    In quis fringilla leo, quis ullamcorper ligula.
-                    Aliquam sed sapien eget leo lacinia rhoncus.
-                    Donec facilisis interdum enim, vehicula blandit libero facilisis in. Nulla ac leo in justo volutpat
-                    pharetra at eget est.
-                    Donec maximus ante vitae nisi pretium, egestas feugiat felis elementum. Vestibulum a felis efficitur,
-                    malesuada nunc sed, tincidunt lacus.
-                    Quisque in dui ut nulla cursus maximus. Suspendisse euismod vestibulum dui, at cursus dui ornare vel.
-                    Sed id tristique mauris. Sed vehicula est id arcu auctor, eu interdum dui molestie. Phasellus et leo
-                    dapibus, venenatis nunc ut, ornare lorem.
-                    Curabitur tempus ac nisi eu euismod.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce suscipit lobortis arcu, sagittis viverra sem faucibus id.
-                    In quis fringilla leo, quis ullamcorper ligula.
-                    Aliquam sed sapien eget leo lacinia rhoncus.
-                    Donec facilisis interdum enim, vehicula blandit libero facilisis in. Nulla ac leo in justo volutpat
-                    pharetra at eget est.
-                    Donec maximus ante vitae nisi pretium, egestas feugiat felis elementum. Vestibulum a felis efficitur,
-                    malesuada nunc sed, tincidunt lacus.
-                    Quisque in dui ut nulla cursus maximus. Suspendisse euismod vestibulum dui, at cursus dui ornare vel.
-                    Sed id tristique mauris. Sed vehicula est id arcu auctor, eu interdum dui molestie. Phasellus et leo
-                    dapibus, venenatis nunc ut, ornare lorem.
-                    Curabitur tempus ac nisi eu euismod.</p>
+                <p>Esta página ha sido creada con el objetivo de facilitar el acceso a información relevante del club, para que los fanaticos del Cacique puedan estar al pendiente de los resultados y últimas noticias del equipo con la hinchada más grande de Chile.</p>
+                <div id="Copas" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="" src="./image/Copa_Nacional.png" alt="Trofeo Liga Nacional">
+                            <h3>Liga Nacional</h3>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="" src="./image/Copa_Chile.png" alt="Trofeo Copa Chile">
+                            <h3>Copa Chile</h3>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="" src="./image/Copa_Libertadores.png" alt="Trofeo Copa Libertadores">
+                            <h3>Copa Libertadores</h3>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="" src="./image/Copa_Interamericana.png" alt="Trofeo Copa Copa_Interamericana">
+                            <h3>Copa Interamericana</h3>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#Copas" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#Copas" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             <!-- ends main -->
         </main>
         <aside id="aside">
@@ -99,6 +93,9 @@
         </footer>
         <!-- ends footer-->
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="./js/wow.min.js"></script>
     <script>
         new WOW().init();

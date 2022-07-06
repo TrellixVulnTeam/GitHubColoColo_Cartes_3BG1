@@ -150,7 +150,7 @@ main{
         padding: 1%;
         border-radius: 50%;
         width: 30%;
-        height: 20 vh;
+        height: 50vh;
         margin-top: 4%;
         margin-bottom: 2%;
     }
@@ -173,6 +173,23 @@ main{
             width: auto;
             text-align: justify;
         }
+
+    .carousel img{
+        width: auto;
+        border-radius: 0%;
+        border: 0px solid #ead36d;
+        padding: 0%;
+        border-radius: 0%;
+        height: 20 vh;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .carousel p{
+        font-family: Rye;
+        text-align: center;
+
+    }
 /*=====================================ASIDE=====================================*/
 aside {
     grid-area: aside;
