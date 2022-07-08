@@ -13,15 +13,14 @@
 <body>
     <div id="GrillaIndex">
         <nav>
-            <legend>Menú</legend>
-                <ul>
-                    <li><a href="./pages/login.html">Log In</a></li>
-                    <li><a href="./pages/historia.html">Historia del Club</a></li>
-                    <li><a href="./pages/estadio.html">¿Como llegar?</a></li>
-                    <li><a href="./pages/himno.html">Himno</a></li>
-                    <li><a href="./pages/signup.html">Crear cuenta</a></li>
-                    <li><img id="LogoMenu" src="./image/colocolo.png"></li>
-                </ul>
+            <ul>
+                <li><a href="./pages/login.html">Log In</a></li>
+                <li><a href="./pages/historia.html">Historia del Club</a></li>
+                <li><a href="./pages/estadio.html">¿Como llegar?</a></li>
+                <li><a href="./pages/himno.html">Himno</a></li>
+                <li><a href="./pages/signup.html">Crear cuenta</a></li>
+                <li><img id="LogoMenu" src="./image/colocolo.png"></li>
+            </ul>
         </nav>
         <!-- ends nav -->
         <main id="main">
@@ -30,6 +29,62 @@
                 alt="Escudo del equipo Colo-Colo que representa el busto del cacique mapuche del mismo nombre">
             <h2>Página de Colo-Colo Club de Fútbol de Chile</h2>
                 <p>Esta página ha sido creada con el objetivo de facilitar el acceso a información relevante del club, para que los fanaticos del Cacique puedan estar al pendiente de los resultados y últimas noticias del equipo con la hinchada más grande de Chile.</p>
+                <section id="TablaPuntaje" class="tabla">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Posiciones</th>
+                                <th scope="col">Equipo</th>
+                                <th scope="col">GF</th>
+                                <th scope="col">GC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Colo Colo</td>
+                                <td>30</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Audax Italiano</td>
+                                <td>26</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Unión Española</td>
+                                <td>16</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Ñublense</td>
+                                <td>18</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Curico Unido</td>
+                                <td>15</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Palestino</td>
+                                <td>12</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>U. de Chile</td>
+                                <td>5</td>
+                                <td>20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
                 <div id="Copas" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -65,22 +120,11 @@
             <!-- ends main -->
         </main>
         <aside id="aside">
-            <h3>Acá Ira un marcador y las posiciones en la tabla</h3>
+            <h3>Acá Ira un marcador</h3>
             <section class="marcador">
                 <img id="local" src="./image/colocolo.png" alt="equipo local colo colo">
                     2:0
                 <img id="visita" src="./image/audaxitaliano.png" alt="equipo visitante audax italiano">
-            </section>
-            <section id="TablaPuntaje" class="tabla">
-                <ol>
-                    <li>Colo Colo</li>
-                    <li>Audax Italiano</li>
-                    <li>Unión Española</li>
-                    <li>Ñublense</li>
-                    <li>Curico Unido</li>
-                    <li>Palestino</li>
-                    <li>U. de Chile</li>
-                </ol>
             </section>
         </aside>
         <footer>

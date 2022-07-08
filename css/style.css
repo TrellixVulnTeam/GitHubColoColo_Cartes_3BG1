@@ -33,14 +33,10 @@
         grid-template-rows: 5% auto auto 5%;
         grid-template-columns: 100%;
     }
-        
+
     aside{
         margin-top: 0%!important;
     }
-    .tabla{
-        margin-top: 3% !important;
-    }    
-
 }
 
 @media only screen and (max-width: 600px) {  
@@ -101,10 +97,6 @@ nav{
     z-index: 100;
 }
 
-    nav legend{
-        text-align: center;
-    }
-
     nav ul{
         list-style: none;
         font-size: 65%;
@@ -113,10 +105,15 @@ nav{
         padding: 1%;
         border-top: 4px solid black;
         border-bottom: 4px solid black;
-        box-shadow: 5px 5px 10px black;
         color:white;
         height: auto;
         width: 100%;
+    }
+
+    nav ul:hover{
+        background-color: #ead36d;
+        box-shadow: 5px 5px 10px #ead36d;
+        transition: 1s;
     }
     
         nav li{
@@ -126,13 +123,17 @@ nav{
             position: relative;
         }
 
-            nav li img{
-                margin-left: 100%;
-                position: static;
-                text-align: left;
-                height: 15%;
-                width: 15%;
+            nav li a{
+                color: #000;
             }
+
+                nav li img{
+                    margin-left: 100%;
+                    position: static;
+                    text-align: left;
+                    height: 15%;
+                    width: 15%;
+                }
 
 /*=====================================MAIN=====================================*/
 
@@ -149,7 +150,7 @@ main{
         border: 2px solid #ead36d;
         padding: 1%;
         border-radius: 50%;
-        width: 30%;
+        width: 40vw;
         height: 50vh;
         margin-top: 4%;
         margin-bottom: 2%;
@@ -173,7 +174,27 @@ main{
             width: auto;
             text-align: justify;
         }
+    
+    #TablaPuntaje{
+        background-color: #8065e0;
+        border: #febe36 solid 2px;
+        font-size: 65%;
+        margin-bottom: 5%;
+    }
+    
+        #TablaPuntaje thead{
+            background-color: #000;
+        }
 
+        #TablaPuntaje tbody{
+            background-color: #8065e0;
+            color: #fff6f6;
+        }
+        
+        #TablaPuntaje:hover{
+            box-shadow: 1px 7px 13px 8px whitesmoke;
+            transition-duration: 1s;
+        }
     .carousel img{
         width: auto;
         border-radius: 0%;
@@ -237,12 +258,6 @@ aside {
             height: 13%;
             width: 10%;
         }
-
-    #TablaPuntaje{
-                border: #febe36 solid 1px;
-                margin-top: 50%;
-                font-size: 65%;
-    }
 /*=====================================FOOTER=====================================*/
 
 footer{
