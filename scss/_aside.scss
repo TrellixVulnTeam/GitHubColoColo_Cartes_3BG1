@@ -1,0 +1,23 @@
+aside {
+    grid-area: aside;
+    width: auto;
+    padding: 0.5%;
+    margin: 100% 2% 7% 2%;
+    text-align: center;
+}
+
+    .marcador{
+        border-top: double 3px white;
+        border-bottom: double 3px white;
+        font-family: Rye;
+    }
+
+        #local{
+            height: 10%;
+            width: 10%;
+        }
+
+        #visita{
+            height: 13%;
+            width: 10%;
+        }

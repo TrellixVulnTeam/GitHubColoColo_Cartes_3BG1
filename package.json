@@ -1,0 +1,25 @@
+{
+  "name": "githubcolocolo_cartes",
+  "version": "1.0.0",
+  "description": "entrega 1 con este formato SASS, el proposito de esto era dejar creados los archivos \"_xxxxxx.scss\" para despues arreglar el proyecto por secciones, utilice el us ode variables para armar el fondo y despúes ingresare mi paleta de colores en este formato cuando la tenga mejor definido.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm  run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caciqxe/GitHubColoColo_Cartes.git"
+  },
+  "author": "Sebastián Cartes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caciqxe/GitHubColoColo_Cartes/issues"
+  },
+  "homepage": "https://github.com/Caciqxe/GitHubColoColo_Cartes#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

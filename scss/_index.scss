@@ -1,0 +1,49 @@
+//Index
+#GrillaIndex{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "main aside"
+    "footer footer"
+    ;
+    grid-template-rows: 5% 90% 5%;
+    grid-template-columns: 90% auto;
+}
+
+@media only screen and (max-width: 929px) {
+#GrillaIndex{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "aside"
+    "footer"
+    ;
+    grid-template-rows: 5% auto auto 5%;
+    grid-template-columns: 100%;
+}
+
+aside{
+    margin-top: 0%!important;
+}
+}
+
+@media only screen and (max-width: 600px) {  
+aside{
+    margin-top: 20%!important;
+}
+#LogoMenu{
+    display: none;}
+}
+
+@media only screen and (max-width: 450px) {
+nav ul{
+    font-size: 35%!important;
+
+}
+}
+
+@media only screen and (max-width: 300px) {
+#LogoMain{
+    display: none;}
+}

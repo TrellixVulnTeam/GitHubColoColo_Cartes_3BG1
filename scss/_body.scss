@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+// Variables
+$Color1:rgb(150, 150, 150);
+$Color2:rgb(66, 66, 66);
+$Color3:rgb(33, 33, 33);
+$Color4:rgba(8, 3, 9, 255);
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 200%;
+    color: whitesmoke;
+    background: linear-gradient(90deg, $Color1, $Color2, $Color3, $Color4);
+    background-size: 400% 400%;
+	animation: gradient 5s ease;
+    animation-fill-mode: forwards;
+	height: 100%;
+    }
+
+@keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+}
+        p{
+        font-family: Assistant;
+        font-size: 50%;
+        }

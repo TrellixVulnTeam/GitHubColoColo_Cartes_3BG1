@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    margin-bottom: 2%;
+    border-top: #ead36d 2px solid;
+    border-bottom: #ead36d 2px solid;
+}
+.Plantel{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Plantel article{
+    width: 25%;
+    height: 80vh;
+    text-align: center;
+    transition-duration: 2s;
+}
+
+.Plantel article:hover{
+    color: black;
+    background-color: whitesmoke;
+    transition-duration: 2s;
+    border: #ead36d 5px solid;
+}

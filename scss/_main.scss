@@ -1,0 +1,100 @@
+main{
+    grid-area: main;
+    width: auto;
+    padding: 0.5%;
+    margin: 3% 2% 7% 2%;
+    text-align: justify;
+    text-align: center;
+}
+
+    main img {
+        border: 2px solid #ead36d;
+        padding: 1%;
+        border-radius: 50%;
+        width: 40vw;
+        height: 50vh;
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+    
+    main h1 {
+        border-top: 8px double #ead36d;
+        border-bottom: 8px double #ead36d;
+        text-align: center;
+    }
+
+    main h2{
+        margin-bottom: 3%;
+        padding: 1%;
+        width: auto;
+        text-align: center;
+    }
+        main p{
+            margin: 2%;
+            padding: 1%;
+            width: auto;
+            text-align: justify;
+        }
+    
+    #TablaPuntaje{
+        background-color: #c0b595;
+        border: #febe36 solid 2px;
+        border-radius: 0 0 5% 5%;
+        font-size: 65%;
+        margin-bottom: 5%;
+        transition-duration: 1s;
+    }
+    
+        #TablaPuntaje thead{
+            color: azure;
+            background-color: #000;
+        }
+
+        #TablaPuntaje tbody{
+            background-color: #c0b595;
+            color: #fff6f6;
+        }
+        
+        
+        #TablaPuntaje:hover{
+            box-shadow: 1px 7px 13px 8px whitesmoke;
+            transition-duration: 1s;
+        }
+
+    .carousel img{
+        width: auto;
+        border-radius: 0%;
+        border: 0px solid #ead36d;
+        padding: 0%;
+        border-radius: 0%;
+        height: 30vh;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .carousel p{
+        font-family: Rye;
+        text-align: center;
+        margin-top: 0px;
+        font-size: 100%;
+        color: red;
+
+    }
+
+    .carousel-control-prev-icon{
+        background-image: none;
+    }
+    .carousel-control-next-icon{
+        background-image: none;
+    }
+    
+    .carousel-control-next-icon:after{
+        content: '>';
+        font-size: 55px;
+        color: #ead36d;
+    }
+    .carousel-control-prev-icon:after{
+        content: '<';
+        font-size: 55px;
+        color: #ead36d;
+    }
