@@ -140,20 +140,20 @@ main p {
   text-align: justify; }
 
 #TablaPuntaje {
-  background-color: #c0b595;
-  border: #febe36 solid 2px;
+  background-color: #005d9d;
+  border: #ead36d solid 2px;
   border-radius: 0 0 5% 5%;
   font-size: 65%;
   margin-bottom: 5%;
   transition-duration: 1s; }
 
 #TablaPuntaje thead {
-  color: azure;
-  background-color: #000; }
+  color: whitesmoke;
+  background-color: #e32219; }
 
 #TablaPuntaje tbody {
-  background-color: #c0b595;
-  color: #fff6f6; }
+  background-color: #005d9d;
+  color: whitesmoke; }
 
 #TablaPuntaje:hover {
   box-shadow: 1px 7px 13px 8px whitesmoke;
@@ -174,7 +174,7 @@ main p {
   text-align: center;
   margin-top: 0px;
   font-size: 100%;
-  color: red; }
+  color: #e32219; }
 
 .carousel-control-prev-icon {
   background-image: none; }
