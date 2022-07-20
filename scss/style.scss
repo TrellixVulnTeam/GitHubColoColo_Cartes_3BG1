@@ -1,9 +1,4 @@
-//Variable
-$AzulColoColo:#005d9d;
-$BlancoColoColo:whitesmoke;
-$DoradoColoColo:#ead36d;
-$RojoColoColo:#e32219;
-$Transiciones:1s;
+@import "_variables.scss";
 
 * {
     margin: 0;

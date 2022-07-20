@@ -8,14 +8,19 @@
 
 #GrillaIndex {
   display: grid;
-  grid-template-areas: "nav nav" "main aside" "footer footer";
+  grid-template-areas: "nav nav"
+ "main aside"
+ "footer footer";
   grid-template-rows: 5% 90% 5%;
   grid-template-columns: 90% auto; }
 
 @media only screen and (max-width: 929px) {
   #GrillaIndex {
     display: grid;
-    grid-template-areas: "nav" "main" "aside" "footer";
+    grid-template-areas: "nav"
+ "main"
+ "aside"
+ "footer";
     grid-template-rows: 5% auto auto 5%;
     grid-template-columns: 100%; }
   aside {
@@ -61,49 +66,40 @@ nav {
   top: 0;
   opacity: 0.9;
   z-index: 100; }
-
-nav ul {
-  list-style: none;
-  font-size: 65%;
-  background: whitesmoke;
-  margin: auto;
-  padding: 1%;
-  border-top: 4px solid black;
-  border-bottom: 4px solid black;
-  color: white;
-  height: auto;
-  width: 100%;
-  transition-duration: 1s; }
-
-nav ul:hover {
-  background-color: #ead36d;
-  box-shadow: 5px 5px 10px #ead36d;
-  transition: 1s; }
-
-nav li {
-  display: inline-block;
-  text-align: center;
-  width: 16%;
-  position: relative; }
-
-.nav-link active {
-  background-color: #161122; }
-
-nav li a {
-  color: #000; }
-
-nav li img {
-  margin-left: 100%;
-  position: static;
-  text-align: left;
-  height: 15%;
-  width: 15%; }
-
-.navbar-brand img {
-  position: static;
-  text-align: left;
-  height: 6vh;
-  width: 6vw; }
+  nav ul {
+    list-style: none;
+    font-size: 65%;
+    background: whitesmoke;
+    margin: auto;
+    padding: 1%;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    color: white;
+    height: auto;
+    width: 100%;
+    transition-duration: 1s; }
+    nav ul:hover {
+      background-color: #ead36d;
+      box-shadow: 5px 5px 10px #ead36d;
+      transition: 1s; }
+    nav ul li {
+      display: inline-block;
+      text-align: center;
+      width: 16%;
+      position: relative; }
+      nav ul li a {
+        color: #000; }
+      nav ul li img {
+        margin-left: 100%;
+        position: static;
+        text-align: left;
+        height: 15%;
+        width: 15%; }
+        nav ul li img .navbar-brand img {
+          position: static;
+          text-align: left;
+          height: 6vh;
+          width: 6vw; }
 
 main {
   grid-area: main;
@@ -112,52 +108,46 @@ main {
   margin: 3% 2% 7% 2%;
   text-align: justify;
   text-align: center; }
+  main img {
+    border: 2px solid #ead36d;
+    padding: 1%;
+    border-radius: 50%;
+    width: 40vw;
+    height: 50vh;
+    margin-top: 4%;
+    margin-bottom: 2%; }
+  main h1 {
+    border-top: 8px double #ead36d;
+    border-bottom: 8px double #ead36d;
+    text-align: center; }
+  main h2 {
+    margin-bottom: 3%;
+    padding: 1%;
+    width: auto;
+    text-align: center; }
+  main p {
+    margin: 2%;
+    padding: 1%;
+    width: auto;
+    text-align: justify; }
 
-main img {
-  border: 2px solid #ead36d;
-  padding: 1%;
-  border-radius: 50%;
-  width: 40vw;
-  height: 50vh;
-  margin-top: 4%;
-  margin-bottom: 2%; }
-
-main h1 {
-  border-top: 8px double #ead36d;
-  border-bottom: 8px double #ead36d;
-  text-align: center; }
-
-main h2 {
-  margin-bottom: 3%;
-  padding: 1%;
-  width: auto;
-  text-align: center; }
-
-main p {
-  margin: 2%;
-  padding: 1%;
-  width: auto;
-  text-align: justify; }
-
-#TablaPuntaje {
+#TablaPuntaje, #TablaPuntaje thead, #TablaPuntaje tbody {
   background-color: #005d9d;
-  border: #ead36d solid 2px;
-  border-radius: 0 0 5% 5%;
   font-size: 65%;
   margin-bottom: 5%;
-  transition-duration: 1s; }
-
-#TablaPuntaje thead {
-  color: whitesmoke;
-  background-color: #e32219; }
-
-#TablaPuntaje tbody {
-  background-color: #005d9d;
-  color: whitesmoke; }
-
-#TablaPuntaje:hover {
-  box-shadow: 1px 7px 13px 8px whitesmoke;
-  transition-duration: 1s; }
+  transition-duration: 1s;
+  border: #ead36d solid 4px;
+  border-radius: 0 0 5% 5%; }
+  #TablaPuntaje:hover, #TablaPuntaje thead:hover, #TablaPuntaje tbody:hover {
+    box-shadow: 1px 7px 13px 8px whitesmoke;
+    transition-duration: 1s; }
+  #TablaPuntaje thead {
+    background-color: #e32219;
+    border: none; }
+  #TablaPuntaje tbody {
+    border: none; }
+    #TablaPuntaje tbody:hover {
+      box-shadow: none; }
 
 .carousel img {
   width: auto;
@@ -165,9 +155,7 @@ main p {
   border: 0px solid #ead36d;
   padding: 0%;
   border-radius: 0%;
-  height: 30vh;
-  margin-top: 0%;
-  margin-bottom: 0%; }
+  height: 30vh; }
 
 .carousel p {
   font-family: Rye;
@@ -178,19 +166,17 @@ main p {
 
 .carousel-control-prev-icon {
   background-image: none; }
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #ead36d; }
 
 .carousel-control-next-icon {
   background-image: none; }
-
-.carousel-control-next-icon:after {
-  content: '>';
-  font-size: 55px;
-  color: #ead36d; }
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: #ead36d; }
+  .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: #ead36d; }
 
 aside {
   grid-area: aside;
@@ -209,7 +195,7 @@ aside {
   width: 10%; }
 
 #visita {
-  height: 13%;
+  height: 10%;
   width: 10%; }
 
 footer {
@@ -223,33 +209,34 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%; }
-
-footer ul {
-  text-align: center;
-  list-style: none;
-  font-size: 0;
-  box-shadow: 5px 5px 10px black; }
-
-footer li {
-  display: inline-block;
-  position: relative;
-  font-size: 10px; }
-
-footer img {
-  padding: 10%;
-  width: 100%;
-  height: 100%; }
+  footer ul {
+    text-align: center;
+    list-style: none;
+    font-size: 0;
+    box-shadow: 5px 5px 10px black; }
+    footer ul li {
+      display: inline-block;
+      position: relative;
+      font-size: 10px; }
+      footer ul li img {
+        padding: 10%;
+        width: 100%;
+        height: 100%; }
 
 #GrillaLogIn {
   display: grid;
-  grid-template-areas: "nav" "LogIn" "footer";
+  grid-template-areas: "nav"
+ "LogIn"
+ "footer";
   grid-template-rows: auto;
   grid-template-columns: auto; }
 
 @media only screen and (min-height: 1360px) {
   #GrillaLogIn {
     display: grid;
-    grid-template-areas: "nav" "LogIn" "footer";
+    grid-template-areas: "nav"
+ "LogIn"
+ "footer";
     grid-template-rows: auto;
     grid-template-columns: auto; }
   .LogIn form {
@@ -260,7 +247,9 @@ footer img {
 @media only screen and (max-width: 880px) {
   #GrillaLogIn {
     display: grid;
-    grid-template-areas: "nav" "LogIn" "footer";
+    grid-template-areas: "nav"
+ "LogIn"
+ "footer";
     grid-template-rows: 40% auto 10%;
     grid-template-columns: auto; }
   .LogIn form {
@@ -270,7 +259,9 @@ footer img {
 @media only screen and (max-width: 600px) {
   #GrillaLogIn {
     display: grid;
-    grid-template-areas: "nav" "LogIn" "footer";
+    grid-template-areas: "nav"
+ "LogIn"
+ "footer";
     grid-template-rows: 40% auto 10%;
     grid-template-columns: auto; }
   #LogoMenu {
@@ -282,9 +273,10 @@ footer img {
   text-align: left; }
 
 .LogIn h1 {
+  border-top: 8px double #ead36d;
+  border-bottom: 8px double #ead36d;
   margin-top: 0.5%;
   padding-top: 1%;
-  border-bottom: #ead36d dashed;
   margin-bottom: 1%;
   padding-bottom: 0.5%; }
 
@@ -334,68 +326,59 @@ footer img {
   margin-top: 30px;
   text-align: center;
   height: 120vh; }
-
-.Himno iframe {
-  width: 50%;
-  height: 50%; }
-
-.Himno h1 {
-  margin-top: 2%;
-  border-top: 4px double #ead36d;
-  margin-bottom: 2%;
-  border-bottom: 4px double #ead36d; }
-
-.Himno p {
-  margin-top: 2%; }
+  .Himno iframe {
+    width: 50%;
+    height: 50%; }
+  .Himno h1 {
+    border-top: 8px double #ead36d;
+    border-bottom: 8px double #ead36d;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+  .Himno p {
+    margin-top: 2%; }
 
 .Mapa {
   margin-top: 1%;
   text-align: left;
   height: 120vh;
   margin-bottom: 9%; }
-
-.Mapa iframe {
-  margin-top: 2%;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 5%; }
+  .Mapa iframe {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%; }
 
 .Formulario {
   margin-top: 20px;
   text-align: center; }
-
-.Formulario legend {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 20px; }
-
-.Formulario h2 {
-  border-top: #3a3a3a dashed;
-  margin-top: 10px;
-  padding-top: 5px;
-  border-bottom: #3a3a3a dashed;
-  margin-bottom: 10px;
-  padding-bottom: 5px; }
-
-.Formulario form {
-  font-size: 15px;
-  width: 33%;
-  height: 100%;
-  background: black;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 4%;
-  box-shadow: 7px 13px 37px #000;
-  padding: 2% 3%;
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
-  color: whitesmoke; }
-
-.Formulario form ul {
-  margin-top: 10px; }
-
-.Formulario form li {
-  margin-top: 5px; }
+  .Formulario legend {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px; }
+  .Formulario h2 {
+    border-top: #3a3a3a dashed;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-bottom: #3a3a3a dashed;
+    margin-bottom: 10px;
+    padding-bottom: 5px; }
+  .Formulario form {
+    font-size: 15px;
+    width: 33%;
+    height: 100%;
+    background: black;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 4%;
+    box-shadow: 7px 13px 37px #000;
+    padding: 2% 3%;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    color: whitesmoke; }
+    .Formulario form ul {
+      margin-top: 10px; }
+      .Formulario form ul li {
+        margin-top: 5px; }
 
 .campo_singup {
   height: 100%;
@@ -409,24 +392,22 @@ footer img {
   background-color: blueviolet; }
 
 h1 {
+  border-top: 8px double #ead36d;
+  border-bottom: 8px double #ead36d;
   text-align: center;
-  margin-bottom: 2%;
-  border-top: #ead36d 2px solid;
-  border-bottom: #ead36d 2px solid; }
+  margin-bottom: 2%; }
 
 .Plantel {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
-
-.Plantel article {
-  width: 25%;
-  height: 80vh;
-  text-align: center;
-  transition-duration: 2s; }
-
-.Plantel article:hover {
-  color: black;
-  background-color: whitesmoke;
-  transition-duration: 2s;
-  border: #ead36d 5px solid; }
+  .Plantel article {
+    width: 25%;
+    height: 80vh;
+    text-align: center;
+    transition-duration: 2s; }
+    .Plantel article:hover {
+      color: black;
+      background-color: whitesmoke;
+      transition-duration: 2s;
+      border: #ead36d 5px solid; }

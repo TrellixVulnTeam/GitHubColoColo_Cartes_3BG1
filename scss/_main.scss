@@ -5,10 +5,9 @@ main{
     margin: 3% 2% 7% 2%;
     text-align: justify;
     text-align: center;
-}
 
-    main img {
-        border: 2px solid $DoradoColoColo;
+    img {
+        border: 2px solid map-get($colores, "DoradoColoColo");
         padding: 1%;
         border-radius: 50%;
         width: 40vw;
@@ -17,84 +16,91 @@ main{
         margin-bottom: 2%;
     }
     
-    main h1 {
-        border-top: 8px double $DoradoColoColo;
-        border-bottom: 8px double $DoradoColoColo;
+    h1 {
+        @include Titulos;
         text-align: center;
     }
 
-    main h2{
+    h2{
         margin-bottom: 3%;
         padding: 1%;
         width: auto;
         text-align: center;
     }
-        main p{
-            margin: 2%;
-            padding: 1%;
-            width: auto;
-            text-align: justify;
-        }
-    
+
+    p{
+        margin: 2%;
+        padding: 1%;
+        width: auto;
+        text-align: justify;
+    }
+}
+
     #TablaPuntaje{
-        background-color: $AzulColoColo;
-        border: $DoradoColoColo solid 2px;
-        border-radius: 0 0 5% 5%;
+        background-color: map-get($colores, "AzulColoColo" );
         font-size: 65%;
         margin-bottom: 5%;
         transition-duration: $Transiciones;
-    }
-    
-        #TablaPuntaje thead{
-            color: $BlancoColoColo;
-            background-color: $RojoColoColo;
-        }
-
-        #TablaPuntaje tbody{
-            background-color: $AzulColoColo;
-            color: $BlancoColoColo;
-        }
+        border: map-get($colores, "DoradoColoColo") solid 4px;
+        border-radius: 0 0 5% 5%;
         
-        
-        #TablaPuntaje:hover{
-            box-shadow: 1px 7px 13px 8px $BlancoColoColo;
+        &:hover{
+            box-shadow: 1px 7px 13px 8px map-get($colores, "BlancoColoColo");
             transition-duration: $Transiciones;
         }
 
-    .carousel img{
-        width: auto;
-        border-radius: 0%;
-        border: 0px solid $DoradoColoColo;
-        padding: 0%;
-        border-radius: 0%;
-        height: 30vh;
-        margin-top: 0%;
-        margin-bottom: 0%;
+        thead{
+            @extend #TablaPuntaje;
+            background-color: map-get($colores, "RojoColoColo");
+            border: none;
+        }
+
+        tbody{
+            @extend #TablaPuntaje;
+            border: none;
+
+            &:hover{
+                box-shadow: none; 
+            }
+        }
     }
 
-    .carousel p{
-        font-family: Rye;
-        text-align: center;
-        margin-top: 0px;
-        font-size: 100%;
-        color: $RojoColoColo;
+    .carousel{
+        img{
+            width: auto;
+            border-radius: 0%;
+            border: 0px solid map-get($colores, "DoradoColoColo");
+            padding: 0%;
+            border-radius: 0%;
+            height: 30vh;
+        }
 
-    }
+        p{
+            font-family: Rye;
+            text-align: center;
+            margin-top: 0px;
+            font-size: 100%;
+            color: map-get($colores, "RojoColoColo");
 
-    .carousel-control-prev-icon{
-        background-image: none;
-    }
-    .carousel-control-next-icon{
-        background-image: none;
-    }
-    
-    .carousel-control-next-icon:after{
-        content: '>';
-        font-size: 55px;
-        color: $DoradoColoColo;
-    }
-    .carousel-control-prev-icon:after{
-        content: '<';
-        font-size: 55px;
-        color: $DoradoColoColo;
+        }
+
+        &-control-prev-icon{
+            background-image: none;
+
+            &:after{
+                content: '<';
+                font-size: 55px;
+                color: map-get($colores, "DoradoColoColo");
+            }
+        }
+        
+        &-control-next-icon{
+            background-image: none;
+
+            &:after{
+                content: '>';
+                font-size: 55px;
+                color: map-get($colores, "DoradoColoColo");
+            }
+        }
     }

@@ -72,9 +72,9 @@
 }
 
     .LogIn h1{
+        @include Titulos;
         margin-top: 0.5%;
         padding-top: 1%;
-        border-bottom: #ead36d dashed;
         margin-bottom: 1%;
         padding-bottom: 0.5%;
     }

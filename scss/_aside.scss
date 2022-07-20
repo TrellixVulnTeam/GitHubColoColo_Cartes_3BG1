@@ -13,11 +13,9 @@ aside {
     }
 
         #local{
-            height: 10%;
-            width: 10%;
+            @include equipo_en_marcador
         }
 
         #visita{
-            height: 13%;
-            width: 10%;
+            @include equipo_en_marcador
         }

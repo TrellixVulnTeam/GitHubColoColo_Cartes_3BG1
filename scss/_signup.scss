@@ -1,15 +1,15 @@
 .Formulario{
     margin-top: 20px;
     text-align: center;
-}
 
-    .Formulario legend{
+
+    legend{
         margin-bottom: 20px;
         text-align: center;
         font-size: 20px;
     }
 
-    .Formulario h2{
+    h2{
         border-top: #3a3a3a dashed;
         margin-top:10px;
         padding-top: 5px;
@@ -18,7 +18,7 @@
         padding-bottom: 5px;
     }
 
-    .Formulario form{
+    form{
         font-size: 15px;
         width: 33%;
         height: 100%;
@@ -31,16 +31,16 @@
         border-top: 4px solid white;
         border-bottom: 4px solid white;
         color:whitesmoke;
-    }
-
-        .Formulario form ul{
+    
+        ul{
             margin-top: 10px;
-        }
-
-            .Formulario form li{
+        
+            li{
                 margin-top: 5px;
             }
-
+        }
+    }
+}
 .campo_singup{
     height: 100%;
     width: 100%;

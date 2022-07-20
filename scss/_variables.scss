@@ -1,0 +1,19 @@
+//Variable
+$colores: ("AzulColoColo":#005d9d, "BlancoColoColo":whitesmoke, "DoradoColoColo":#ead36d, "RojoColoColo":#e32219);
+
+//$AzulColoColo:#005d9d;
+//$BlancoColoColo:whitesmoke;
+//$DoradoColoColo:#ead36d;
+//$RojoColoColo:#e32219;
+$Transiciones:1s;
+
+//Mixin
+@mixin equipo_en_marcador {
+    height: 10%;
+    width: 10%;
+}
+
+@mixin Titulos{
+    border-top: 8px double map-get($colores, "DoradoColoColo");
+    border-bottom: 8px double map-get($colores, "DoradoColoColo");
+}

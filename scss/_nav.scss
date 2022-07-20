@@ -4,12 +4,11 @@ nav{
     top: 0;
     opacity: 0.9;
     z-index: 100;
-}
 
-    nav ul{
+    ul{
         list-style: none;
         font-size: 65%;
-        background: $BlancoColoColo;
+        background: map-get($colores,"BlancoColoColo");
         margin: auto;
         padding: 1%;
         border-top: 4px solid black;
@@ -18,35 +17,29 @@ nav{
         height: auto;
         width: 100%;
         transition-duration: 1s;
-    }
-
-    nav ul:hover{
-        background-color: #ead36d;
-        box-shadow: 5px 5px 10px #ead36d;
-        transition: 1s;
-    }
     
-        nav li{
+        &:hover{
+            background-color: #ead36d;
+            box-shadow: 5px 5px 10px #ead36d;
+            transition: 1s;
+        }
+    
+        li{
             display: inline-block;
             text-align: center;
             width: 16%;
             position: relative;
-        }
-            .nav-link active{
-                background-color: #161122;
-            }
-            
-            nav li a{
+
+            a{
                 color: #000;
             }
 
-                nav li img{
+                img{
                     margin-left: 100%;
                     position: static;
                     text-align: left;
                     height: 15%;
                     width: 15%;
-                }
 
                 .navbar-brand img{
                     position: static;
@@ -54,3 +47,7 @@ nav{
                     height: 6vh;
                     width: 6vw;
                 }
+            }
+        }
+    }
+}
