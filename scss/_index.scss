@@ -10,7 +10,7 @@
     grid-template-columns: 90% auto;
 }
 
-@media only screen and (max-width: 929px) {
+@media only screen and (max-width: 769px) {
 #GrillaIndex{
     display: grid;
     grid-template-areas: 
@@ -23,27 +23,41 @@
     grid-template-columns: 100%;
 }
 
+#LogoMain{
+    height: 50vh;
+    width: 50vw;
+}
+
 aside{
-    margin-top: 0%!important;
+    margin-top: 0%;
 }
 }
 
 @media only screen and (max-width: 600px) {  
-aside{
-    margin-top: 20%!important;
+
+    #LogoMain{
+    height: 40vh;
+    width: 50vw;
 }
+
+aside{
+    margin-top: 20%;
+}
+
 #LogoMenu{
     display: none;}
 }
 
-@media only screen and (max-width: 450px) {
-nav ul{
-    font-size: 35%!important;
+@media only screen and (max-width: 453px) {
+    nav ul{
+        font-size: 35%;
+    }
 
-}
-}
+    #LogoMain{
+        display: none;
+    }
 
-@media only screen and (max-width: 300px) {
-#LogoMain{
-    display: none;}
+    aside{
+    margin-bottom: 20%;
+    }
 }

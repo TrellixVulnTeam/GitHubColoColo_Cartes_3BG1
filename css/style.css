@@ -6,40 +6,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-#GrillaIndex {
-  display: grid;
-  grid-template-areas: "nav nav"
- "main aside"
- "footer footer";
-  grid-template-rows: 5% 90% 5%;
-  grid-template-columns: 90% auto; }
-
-@media only screen and (max-width: 929px) {
-  #GrillaIndex {
-    display: grid;
-    grid-template-areas: "nav"
- "main"
- "aside"
- "footer";
-    grid-template-rows: 5% auto auto 5%;
-    grid-template-columns: 100%; }
-  aside {
-    margin-top: 0% !important; } }
-
-@media only screen and (max-width: 600px) {
-  aside {
-    margin-top: 20% !important; }
-  #LogoMenu {
-    display: none; } }
-
-@media only screen and (max-width: 450px) {
-  nav ul {
-    font-size: 35% !important; } }
-
-@media only screen and (max-width: 300px) {
-  #LogoMain {
-    display: none; } }
-
 body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 200%;
@@ -223,49 +189,40 @@ footer {
         width: 100%;
         height: 100%; }
 
-#GrillaLogIn {
+#GrillaIndex {
   display: grid;
-  grid-template-areas: "nav"
- "LogIn"
- "footer";
-  grid-template-rows: auto;
-  grid-template-columns: auto; }
+  grid-template-areas: "nav nav" "main aside" "footer footer";
+  grid-template-rows: 5% 90% 5%;
+  grid-template-columns: 90% auto; }
 
-@media only screen and (min-height: 1360px) {
-  #GrillaLogIn {
+@media only screen and (max-width: 769px) {
+  #GrillaIndex {
     display: grid;
-    grid-template-areas: "nav"
- "LogIn"
- "footer";
-    grid-template-rows: auto;
-    grid-template-columns: auto; }
-  .LogIn form {
-    margin-top: 10% !important;
-    height: 110% !important;
-    width: 100% !important; } }
-
-@media only screen and (max-width: 880px) {
-  #GrillaLogIn {
-    display: grid;
-    grid-template-areas: "nav"
- "LogIn"
- "footer";
-    grid-template-rows: 40% auto 10%;
-    grid-template-columns: auto; }
-  .LogIn form {
-    width: 100% !important;
-    height: 100% !important; } }
+    grid-template-areas: "nav" "main" "aside" "footer";
+    grid-template-rows: 5% auto auto 5%;
+    grid-template-columns: 100%; }
+  #LogoMain {
+    height: 50vh;
+    width: 50vw; }
+  aside {
+    margin-top: 0%; } }
 
 @media only screen and (max-width: 600px) {
-  #GrillaLogIn {
-    display: grid;
-    grid-template-areas: "nav"
- "LogIn"
- "footer";
-    grid-template-rows: 40% auto 10%;
-    grid-template-columns: auto; }
+  #LogoMain {
+    height: 40vh;
+    width: 50vw; }
+  aside {
+    margin-top: 20%; }
   #LogoMenu {
     display: none; } }
+
+@media only screen and (max-width: 453px) {
+  nav ul {
+    font-size: 35%; }
+  #LogoMain {
+    display: none; }
+  aside {
+    margin-bottom: 20%; } }
 
 .LogIn {
   grid-area: LogIn;
@@ -310,6 +267,42 @@ footer {
   align-content: center;
   transition-duration: 1s; }
 
+#GrillaLogIn {
+  display: grid;
+  grid-template-areas: "nav" "LogIn" "footer";
+  grid-template-rows: auto;
+  grid-template-columns: auto; }
+
+@media only screen and (min-height: 1360px) {
+  #GrillaLogIn {
+    display: grid;
+    grid-template-areas: "nav" "LogIn" "footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto; }
+  .LogIn form {
+    margin-top: 10%;
+    height: 110%;
+    width: 100%; } }
+
+@media only screen and (max-width: 880px) {
+  #GrillaLogIn {
+    display: grid;
+    grid-template-areas: "nav" "LogIn" "footer";
+    grid-template-rows: 40% auto 10%;
+    grid-template-columns: auto; }
+  .LogIn form {
+    width: 100%;
+    height: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  #GrillaLogIn {
+    display: grid;
+    grid-template-areas: "nav" "LogIn" "footer";
+    grid-template-rows: 40% auto 10%;
+    grid-template-columns: auto; }
+  #LogoMenu {
+    display: none; } }
+
 .colocolo h1 {
   text-align: left; }
 
@@ -329,13 +322,50 @@ footer {
   .Himno iframe {
     width: 50%;
     height: 50%; }
-  .Himno h1 {
+  .Himno h3 {
     border-top: 8px double #ead36d;
     border-bottom: 8px double #ead36d;
     margin-top: 2%;
-    margin-bottom: 2%; }
+    margin-bottom: 2%;
+    padding-top: 10px;
+    border-bottom: none; }
   .Himno p {
-    margin-top: 2%; }
+    margin-top: 2%;
+    text-align: center; }
+
+@media only screen and (max-width: 1100px) {
+  .colocolo img {
+    margin-top: 3%;
+    height: 50vh;
+    width: 75vw;
+    margin-bottom: 2%;
+    text-align: center;
+    border-radius: 0%; }
+  .Himno iframe {
+    margin-top: 3%;
+    height: 50vh;
+    width: 75vw;
+    margin-bottom: 2%;
+    text-align: center; } }
+
+@media only screen and (max-width: 769px) {
+  .colocolo img {
+    margin-top: 3%;
+    height: 40vh;
+    width: 60vw;
+    margin-bottom: 2%;
+    text-align: center;
+    border-radius: 0%; }
+  .colocolo p {
+    margin-top: 5%;
+    font-size: 75%; }
+  .Himno iframe {
+    margin-top: 3%;
+    height: 40vh;
+    width: 60vw;
+    margin-bottom: 2%;
+    text-align: center;
+    border-radius: 0%; } }
 
 .Mapa {
   margin-top: 1%;
@@ -347,49 +377,6 @@ footer {
     width: 100%;
     height: 100%;
     margin-bottom: 5%; }
-
-.Formulario {
-  margin-top: 20px;
-  text-align: center; }
-  .Formulario legend {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 20px; }
-  .Formulario h2 {
-    border-top: #3a3a3a dashed;
-    margin-top: 10px;
-    padding-top: 5px;
-    border-bottom: #3a3a3a dashed;
-    margin-bottom: 10px;
-    padding-bottom: 5px; }
-  .Formulario form {
-    font-size: 15px;
-    width: 33%;
-    height: 100%;
-    background: black;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 4%;
-    box-shadow: 7px 13px 37px #000;
-    padding: 2% 3%;
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
-    color: whitesmoke; }
-    .Formulario form ul {
-      margin-top: 10px; }
-      .Formulario form ul li {
-        margin-top: 5px; }
-
-.campo_singup {
-  height: 100%;
-  width: 100%; }
-
-.BotonSignup {
-  margin-top: 10%;
-  padding: 5%;
-  margin-bottom: 10%;
-  align-content: center;
-  background-color: blueviolet; }
 
 h1 {
   border-top: 8px double #ead36d;
@@ -411,3 +398,18 @@ h1 {
       background-color: whitesmoke;
       transition-duration: 2s;
       border: #ead36d 5px solid; }
+
+@media only screen and (max-width: 1100px) {
+  .Plantel article {
+    width: 50%; } }
+
+@media only screen and (max-width: 750px) {
+  .Plantel {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+    .Plantel article {
+      width: 100%;
+      height: 100vh;
+      transition-duration: 2s; } }

@@ -1,0 +1,65 @@
+#GrillaLogIn{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "LogIn"
+    "footer"
+    ;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+@media only screen and (min-height: 1360px) {
+    #GrillaLogIn{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "LogIn"
+        "footer"
+        ;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+
+        .LogIn form{
+            margin-top: 10%;
+            height: 110%;
+            width: 100%;
+        }
+}
+
+
+@media only screen and (max-width: 880px) {
+    #GrillaLogIn{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "LogIn"
+        "footer"
+        ;
+        grid-template-rows: 40% auto 10%;
+        grid-template-columns: auto;
+    }
+
+        .LogIn form{
+            width: 100%; 
+            height: 100%;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+    #GrillaLogIn{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "LogIn"
+        "footer"
+        ;
+        grid-template-rows: 40% auto 10%;
+        grid-template-columns: auto;
+    }
+
+        #LogoMenu{
+            display: none;}
+}
+

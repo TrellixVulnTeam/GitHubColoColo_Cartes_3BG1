@@ -25,13 +25,16 @@
         height:50%;
     }
 
-    h1{
+    h3{
         @include Titulos;
         margin-top: 2%;
         margin-bottom: 2%;
+        padding-top: 10px;
+        border-bottom: none;
     }
 
     p{
         margin-top: 2%;
+        text-align: center;
     }
 }

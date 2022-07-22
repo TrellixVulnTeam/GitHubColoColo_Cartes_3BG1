@@ -17,3 +17,20 @@ $Transiciones:1s;
     border-top: 8px double map-get($colores, "DoradoColoColo");
     border-bottom: 8px double map-get($colores, "DoradoColoColo");
 }
+
+@mixin media_visual_1100px {
+    margin-top: 3%;
+    height: 50vh;
+    width: 75vw;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+@mixin media_visual_769px {
+    margin-top: 3%;
+    height: 40vh;
+    width: 60vw;
+    margin-bottom: 2%;
+    text-align: center;
+    border-radius: 0%;
+}
