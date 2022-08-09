@@ -267,6 +267,68 @@ footer {
   align-content: center;
   transition-duration: 1s; }
 
+.colocolo h1 {
+  text-align: left; }
+
+.colocolo img {
+  margin-top: 3%;
+  border-radius: 0%;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 2%;
+  text-align: center;
+  opacity: 1; }
+
+.Himno {
+  margin-top: 30px;
+  text-align: center;
+  height: 120vh; }
+  .Himno iframe {
+    width: 50%;
+    height: 50%; }
+  .Himno h3 {
+    border-top: 8px double #ead36d;
+    border-bottom: 8px double #ead36d;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 10px;
+    border-bottom: none; }
+  .Himno p {
+    margin-top: 2%;
+    text-align: center; }
+
+.Mapa {
+  margin-top: 1%;
+  text-align: left;
+  height: 120vh;
+  margin-bottom: 9%; }
+  .Mapa iframe {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%; }
+
+h1 {
+  border-top: 8px double #ead36d;
+  border-bottom: 8px double #ead36d;
+  text-align: center;
+  margin-bottom: 2%; }
+
+.Plantel {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .Plantel article {
+    width: 25%;
+    height: 80vh;
+    text-align: center;
+    transition-duration: 2s; }
+    .Plantel article:hover {
+      color: black;
+      background-color: whitesmoke;
+      transition-duration: 2s;
+      border: #ead36d 5px solid; }
+
 #GrillaLogIn {
   display: grid;
   grid-template-areas: "nav" "LogIn" "footer";
@@ -303,36 +365,6 @@ footer {
   #LogoMenu {
     display: none; } }
 
-.colocolo h1 {
-  text-align: left; }
-
-.colocolo img {
-  margin-top: 3%;
-  border-radius: 0%;
-  width: 50%;
-  height: 50%;
-  margin-bottom: 2%;
-  text-align: center;
-  opacity: 1; }
-
-.Himno {
-  margin-top: 30px;
-  text-align: center;
-  height: 120vh; }
-  .Himno iframe {
-    width: 50%;
-    height: 50%; }
-  .Himno h3 {
-    border-top: 8px double #ead36d;
-    border-bottom: 8px double #ead36d;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding-top: 10px;
-    border-bottom: none; }
-  .Himno p {
-    margin-top: 2%;
-    text-align: center; }
-
 @media only screen and (max-width: 1100px) {
   .colocolo img {
     margin-top: 3%;
@@ -366,38 +398,6 @@ footer {
     margin-bottom: 2%;
     text-align: center;
     border-radius: 0%; } }
-
-.Mapa {
-  margin-top: 1%;
-  text-align: left;
-  height: 120vh;
-  margin-bottom: 9%; }
-  .Mapa iframe {
-    margin-top: 2%;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 5%; }
-
-h1 {
-  border-top: 8px double #ead36d;
-  border-bottom: 8px double #ead36d;
-  text-align: center;
-  margin-bottom: 2%; }
-
-.Plantel {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .Plantel article {
-    width: 25%;
-    height: 80vh;
-    text-align: center;
-    transition-duration: 2s; }
-    .Plantel article:hover {
-      color: black;
-      background-color: whitesmoke;
-      transition-duration: 2s;
-      border: #ead36d 5px solid; }
 
 @media only screen and (max-width: 1100px) {
   .Plantel article {
